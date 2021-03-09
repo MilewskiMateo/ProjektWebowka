@@ -1,7 +1,7 @@
 # Opis
 Jest to projekt będący systemem do obsługi paczek i paczkomatów. 
 Projekt był robiony w ramach zajęć na studiach i jest on tylko symulacją jak mógłby taki serwis się prezentować.
-System udostępnia trzy różne aplikacje przeznaczone osobno dla strony głównej, aplikacja wyświetlana na ekranie paczkomatu i aplikacja na tablecie kurieria.
+System udostępnia trzy różne aplikacje przeznaczone osobno dla strony głównej, aplikacji wyświetlanej na ekranie paczkomatu i aplikacji na tablecie kurieria.
 Znajdują się one pod innymi portami.
 
 Aplikacja głównej strony znajduje się na porcie 8080
