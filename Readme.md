@@ -19,6 +19,7 @@ Po uruchomieniu dockera należy udać się na adres:
 Jest to endpoint wypełniający bazę danych przykładowymi paczkomatami i kurierami. 
 
 Możliwie do wykorzystania paczkomaty mają odpowiednie Id:
+
 Id paczkomatu:  paczkomat1
 Id paczkomatu:  paczkomat2
 Id paczkomatu:  paczkomat3
