@@ -28,10 +28,8 @@ Możliwie konta kurierów do wykorzystania mają odpowiednie loginy i hasła:
 
 Login: Admin1
 Hasło: slomianykapelusz25!
-
 Login: Admin2
 Hasło: NieodpowiedzialneHaslo123
-
 Login: Admin3
 Hasło: MojPiesJestSuper
 
