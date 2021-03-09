@@ -39,8 +39,11 @@ Hasło: MojPiesJestSuper
 Do uruchomienia aplikacji kuriera proponuję użyć polecenia:
 
 `google-chrome --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=https://localhost:8083 --allow-insecure-localhost https://localhost:8083`
+
 lub 
+
 `start chrome --ignore-certificate-errors --unsafely-treat-insecure-origin-as-secure=https://localhost:8083 --allow-insecure-localhost https://localhost:8083`
+
 w celu wyświtlenia poprawnie progresywnej aplikacji.
 
 Na sam koniec proszę zwrócić uwagę, że podczas kopiowania id paczki z głównej 
