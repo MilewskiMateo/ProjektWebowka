@@ -1,0 +1,6 @@
+Flask
+gunicorn
+redis
+fpdf
+pyopenssl
+flask-jwt-extended

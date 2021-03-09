@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>FlashBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Cambay&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="../styles/couriers.css" rel="stylesheet" type="text/css">
+    <link href="../styles/couriers-forms.css" rel="stylesheet" type="text/css">
+    <link href="../styles/my-ships-courier.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="bg-image">
+        <div class="container">
+
+            <div class="inner shadow">
+                <div class="ship-list-box">
+                    <h3 class="number-Of-Ships">
+                        Moje paczki:
+                    </h3>
+                    {% for ship in my_ships%}
+                    <div class="form-check">
+                        <h1 class="form-check-label" >{{ ship['path_and_filename'] }}</h1>
+                    </div>
+                    {% endfor %}
+                    {% if prevPage != ''%}
+                    <a href={{prevPage}} class="prevButton"><button type="button" class="btn btn-dark">Prev</button></a>
+                    {% endif %}
+                    {% if nextPage != ''%}
+                    <a href={{nextPage}} class="nextButton"><button type="button" class="btn btn-dark">Next</button></a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <span class="foot position-absolute bottom-0 end-0">© 2020 FlashBox </span>
+            <div class="position-absolute bottom-0 start-0" >
+                <a href="/"> <button type="button" class="btn btn-dark">Powrót do interfejsu</button> </a>
+                <a href="/logout"> <button type="button" class="btn btn-dark">Wyloguj</button> </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

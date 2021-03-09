@@ -1,0 +1,44 @@
+version: "3"
+services:
+  web-login:
+    build:
+      context: .
+      dockerfile: ./Docker/login/Dockerfile
+    ports: ["8080:5000"]
+    volumes: [./home_app:/home_app]
+    environment:
+      FLASK_ENV: development
+      LOGIN_JWT_SECRET: $LOGIN_JWT_SECRET
+      SESSION_SECRET: $SESSION_SECRET
+  web-files:
+    build:
+      context: .
+      dockerfile: ./Docker/files/Dockerfile
+    ports: ["8081:5001"]
+    volumes: [./home_app:/home_app]
+    environment:
+      FLASK_ENV: development
+      LOGIN_JWT_SECRET: $LOGIN_JWT_SECRET
+      SESSION_SECRET: $SESSION_SECRET
+  web-lockers:
+    build:
+      context: .
+      dockerfile: ./Docker/lockers/Dockerfile
+    ports: ["8082:5002"]
+    volumes: [./home_app:/home_app]
+    environment:
+      FLASK_ENV: development
+      LOGIN_JWT_SECRET: $LOGIN_JWT_SECRET
+      SESSION_SECRET: $SESSION_SECRET
+  web-couriers:
+    build:
+      context: .
+      dockerfile: ./Docker/couriers/Dockerfile
+    ports: ["8083:5003"]
+    volumes: [./home_app:/home_app]
+    environment:
+      FLASK_ENV: development
+      LOGIN_JWT_SECRET: $LOGIN_JWT_SECRET
+      SESSION_SECRET: $SESSION_SECRET
+  redis-db:
+    image: "redis:alpine"

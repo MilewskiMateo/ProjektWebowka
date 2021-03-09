@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>FlashBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Cambay&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="styles/lockers.css" rel="stylesheet" type="text/css">
+    <link href="styles/lockers-forms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="bg-image">
+    <div class="container">
+        
+			<div class="inner shadow">
+				<div class="image-holder">
+					<img src="images/courier.png" alt="">
+				</div>
+				<div class="form-container">
+					
+					<form action="/storage/list" method="GET">
+						<h3>Sprawdź zawartość paczkomatu</h3>
+						<div class="form-wrapper">
+							<input type="text" placeholder="Id paczkomatu" name="lockerId" class="form-control">
+						</div>
+						<div class="form-wrapper">
+							<input type="password" placeholder="Kod dostepu" name="timeToken" class="form-control">
+						</div>
+						{% if wrong %}
+						<h3>Złe dane</h3>
+						{% endif %}
+						<input type="submit" class="register-button btn-dark" name="submit" value="Sprawdź">
+					</form>
+				</div>
+			</div>
+    
+    <span  class="foot position-absolute bottom-0 end-0">© 2020 FlashBox </span>
+    <a href="/"  class="position-absolute bottom-0 start-0"> <button type="button" class="btn btn-dark">Powrót do interfejsu</button> </a>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&display=swap');
+
+body, html {
+    height: 100%;
+  }
+  
+  .bg-image { 
+    background-image: url("https://carnival.withspotify.com/static/takeovers-211dfb5b904206f0ad0bd51fb86f0e73.png");
+    height: 100%; 
+    background-color: #e8c111;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+  .my-title{
+      padding-top: 15vh;
+      padding-bottom: 5vh;
+      font-size: 60px;
+      font-family: 'Biryani', sans-serif;
+      color: white; 
+  }
+  .my-title span{
+      display: block;
+  }
+
+
+  .main-button{
+    width: 50vw;
+    height: 40vh;
+    font-size: 50px;
+    background-color: rgba(255, 249, 249, 0.37);
+    border: none;
+    border-radius: 10%;
+    font-family: 'Biryani', sans-serif;
+    color: black; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.main-button:hover{
+    background-color:  rgba(80, 79, 79, 0.534);
+    color: white;
+}
+.main-button:focus{
+    outline: none;
+}
+.foot{
+    margin: 5px;
+}
+  .btn-dark{
+      margin: 5px;
+  }

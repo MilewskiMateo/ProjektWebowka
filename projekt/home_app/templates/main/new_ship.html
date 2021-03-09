@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>FlashBox</title>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Cambay&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="scripts/new_ship_script.js"></script>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+
+        <div class="logo">
+            <div class="logo-relative">
+                <a class="logo-text" href="/">
+                    FLASH<span class="span">BOX</span>
+                </a>
+                <div class="logo-image">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav-mobile">
+
+            <li><a href="https://localhost:8080/">Home</a></li>
+            <li><a href="https://localhost:8080/registration">Rejestracja</a></li>
+            {% if isLoggedIn %}
+            <li><a href="https://localhost:8080/ships">Moje Paczki</a></li>
+            <li><a href="https://localhost:8080/new_ship">Nowa Paczka</a></li>
+            <li><a href="https://localhost:8080/logout">Wyloguj</a></li>
+            {% else %}
+            <li><a href="https://localhost:8080/login">Login</a></li>
+            {% endif %}
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div class="total_form_container">
+        <div class="new-ship-form-container">
+            <div class="form-box">
+                <form id="new-ship-form" class="new-ship-registration-form" >
+
+                    <div class="left_box">
+
+                        <div class="form-title">
+                            Dane nadawcy
+                        </div>
+
+
+                        <div>
+                            <input id="sender_name" type="text" name="sender_name" placeholder="Imię" />
+                        </div>
+
+
+                        <div>
+                            <input id="sender_surname" type="text" name="sender_surname" placeholder="Nazwisko" />
+                        </div>
+
+                        <div>
+                            <input id="sender_country" type="text" name="sender_country" placeholder="Kraj" />
+                        </div>
+
+                        <div>
+                            <input id="sender_street" type="text" name="sender_street" placeholder="Ulica" />
+                        </div>
+
+                        <div>
+                            <input id="sender_nr" type="text" name="sender_nr" placeholder="nr" />
+                        </div>
+
+                        <div>
+                            <input id="sender_postal" type="text" name="sender_postal" placeholder="kod pocztowy" />
+                        </div>
+
+                        <div>
+                            <input id="sender_telephone" type="tel" name="sender_telephone"
+                                placeholder="Telefon kontaktowy" />
+                        </div>
+
+                    </div>
+
+
+                    <div class="right_box">
+
+                        <div class="form-title">
+                            Dane odbiorcy
+                        </div>
+                        
+                        <div>
+                            <input id="name" type="text" name="name" placeholder="Imię" />
+                        </div>
+
+                        <div>
+                            <input id="surname" type="text" name="surname" placeholder="Nazwisko" />
+                        </div>
+
+                        <div>
+                            <input id="country" type="text" name="country" placeholder="Kraj" />
+                        </div>
+
+                        <div>
+                            <input id="street" type="text" name="street" placeholder="Ulica" />
+                        </div>
+
+                        <div>
+                            <input id="nr" type="text" name="nr" placeholder="nr" />
+                        </div>
+
+                        <div>
+                            <input id="postal" type="text" name="postal" placeholder="kod pocztowy" />
+                        </div>
+
+                        <div>
+                            <input id="telephone" type="tel" name="telephone" placeholder="Telefon kontaktowy" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <input id="file-input" class="file-input" type="file" name="file-input" accept="image/png, image/jpeg"
+                            placeholder="Dodaj zdjęcie " />
+                    </div>
+
+                    <div class="form-row">
+                        <input id="button-reg-form" type="submit" value="Dodaj" class="submit-button-not-available" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer>
+        <p class="footer-inline left">&copy; 2020 Mateusz Milewski</p>
+    </footer>
+
+</body>
+
+</html>

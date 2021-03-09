@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>FlashBox</title>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Cambay&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="scripts/home_script.js"></script>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+
+        <div class="logo">
+            <div class="logo">
+                <a class="logo-text" href="/">
+                    FLASH<span class="span">BOX</span>
+                </a>
+                <div class="logo-image">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav-mobile">
+
+            <li><a href="https://localhost:8080/">Home</a></li>
+            <li><a href="https://localhost:8080/registration">Rejestracja</a></li>
+            {% if isLoggedIn %}
+            <li><a href="https://localhost:8080/ships">Moje Paczki</a></li>
+            <li><a href="https://localhost:8080/new_ship">Nowa Paczka</a></li>
+            <li><a href="https://localhost:8080/logout">Wyloguj</a></li>
+            {% else %}
+            <li><a href="https://localhost:8080/login">Login</a></li>
+            {% endif %}
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="total_content_container">
+
+        <div class="step_ahead">
+            <div>
+                ALWAYS ONE STEP
+                <h1> AHEAD</h1>
+                <a class="bt_join_now" href="/registration">
+                    JOIN NOW
+                </a>
+            </div>
+        </div>
+
+
+        <section>
+            <h3>Czym jest FlashBox?</h3>
+            <p>
+                FlashBox jest systemem do automatycznej obsługi paczek, który jest w stanie zaspokoić potrzeby człowieka
+                XXI wieku. FlashBox dla swoich klientów zapewnia szybki i wygodny system do nadzorowania paczek, jak i
+                sam transport paczek jest stale nadzorowany pod względem jakości i szybkości usługi. Wszystko te
+                możliwości są w zasięgu twojej ręki. Wystarczy, że dołączysz do jednego z wielu naszych abonamentów.
+            </p>
+        </section>
+        <article>
+            <h3>Abonamenty</h3>
+            <p>
+                Aby dołączyć do naszej społeczności FlashBox wystarczy, że zakupisz jeden z naszych abonamentów, po
+                zdecydowanie najatrakcyjniejszych cenach.
+            </p>
+            <table class="color-table">
+                <caption>Abonamenty</caption>
+                <thead>
+                    <tr>
+                        <td>Nr</td>
+                        <td>Opis</td>
+                        <td>Paczka do 5kg</td>
+                        <td>Paczka do 15kg </td>
+                        <td>Wysyłka kurierska expresowa</td>
+                        <td>Wysyłka kurierska standard</td>
+                        <td>Cena </td>
+
+                    </tr>
+                </thead>
+                <tbody id="laureates_tbody">
+                    <tr class="greenRow">
+                        <td>1</td>
+                        <td>Premium Membership</td>
+                        <td>darmowe 3 paczki dziennie</td>
+                        <td>darmowe 3 paczki dziennie</td>
+                        <td>+ 6zł</td>
+                        <td>+ 2zł</td>
+                        <td>350zł/mies</td>
+                    </tr>
+                    <tr class="blueRow">
+                        <td>2</td>
+                        <td>DailyShip</td>
+                        <td>darmowa 1 paczka dziennie</td>
+                        <td>darmowe 1 paczka dziennie</td>
+                        <td>+ 6zł</td>
+                        <td>+ 2zł</td>
+                        <td>200zł/mies</td>
+                    </tr>
+                    <tr class="greenRow">
+                        <td>3</td>
+                        <td>EasyShip</td>
+                        <td>darmowe 10 paczek/miesiac</td>
+                        <td>+ 6zł/paczka</td>
+                        <td>+ 8zł/paczka</td>
+                        <td>+ 2zł/paczka</td>
+                        <td>120zł/mies</td>
+                    </tr>
+                    <tr class="blueRow">
+                        <td>4</td>
+                        <td>BasicShip</td>
+                        <td>+ 2zł/paczka</td>
+                        <td>+ 8zł/paczka</td>
+                        <td>+ 8zł/paczka</td>
+                        <td>+ 2zł/paczka</td>
+                        <td>50zł/mies</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>BasicShip</h4>
+            <p>
+                To świetnie, że chcesz do nas dołączyć. Jeżeli zdecydujesz się na ten abonament to otrzymasz możliwość
+                wysyłki każdej małej paczki(0-5kg) w cenie 2zł + cena za rodzaj transportu. Duże paczki(5-15kg) będziesz
+                mógł wysyłać cenie 8zł + cena za rodzaj transportu. Cena transportu jest zależna od tego czy chcesz aby
+                była to operacja ekspresowa (8zł) czy standardowa(2zł).
+            </p>
+            <h4>EasyShip</h4>
+            <p>
+                Nasz zdecydowany bestseller oferujący możliwość wysyłki 10 paczek małych rozmiarów miesięcznie
+                kompletnie za darmo a to wszystko transportem ekspresowym. Po przekroczeniu tej liczby cena za każdą
+                małą paczkę wynosi 4zł + cena za rodzaj transportu (eksprsowa-8zł standard-2zł). Paczki duży rozmiarów
+                będziesz mógł wysyłać w cenie 6zł + cena za rodzaj transportu(ekspresowa-8zł standard-2zł).
+            </p>
+            <h4>DailyShip</h4>
+            <p>
+                Jeżeli regularnie wysyłasz paczki to ten abonament jest idealnie dla ciebie. Będąc jego członkiem
+                otrzymasz możliwość wysyłania dziennie jednej paczki małych rozmiarów lub dużych rozmiarów transportem
+                ekspresowym zupełnie za darmo. Nadmiarowe paczki będą już w cenie mała (4zł) duża (8zł) + cena za rodzaj
+                transportu (ekspresowa-6zł standard-2zł).
+            </p>
+            <h4>Premium Membership</h4>
+            <p>
+                Wow, jeśli zdecydujesz się zostać członkiem premium to otrzymasz w ten sposób dostęp do możliwości
+                darmowej wysyłki 3 paczek dowolnych rozmiarów każdego dnia (transport ekspresowy). Jeżeli i to będzie za
+                małą liczbą to każda kolejna paczka powyżej trzeciej danego dnia będzie w cenie mała (4zł) duża (8zł) +
+                cena za rodzaj transportu (ekspresowa-6zł standard-2zł).
+            </p>
+
+
+
+        </article>
+    </div>
+
+    <footer>
+        <p class="footer-inline left">&copy; 2020 Mateusz Milewski</p>
+    </footer>
+</body>
+
+</html>

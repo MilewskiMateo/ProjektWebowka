@@ -1,0 +1,45 @@
+  .inner h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+  @media screen and (max-width: 900px) {
+    .inner h3,.number-Of-Ships{
+      font-size: 40px;
+    }
+    .inner h1{
+      font-size: 25px;
+    }
+    .form-control{
+      font-size: 25px;
+      margin-bottom: 15px;
+  
+    }
+    .image-holder{
+      display: none;
+    }
+    .form-container{
+      width: 100%;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+  .inner h3,.number-Of-Ships{
+    font-size: 25px;
+  }
+  .inner h1{
+    font-size: 15px;
+  }
+  .form-control{
+    font-size: 15px;
+    margin-bottom: 15px;
+
+  }
+  .image-holder{
+    display: none;
+  }
+  .form-container{
+    width: 100%;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>FlashBox</title>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Cambay&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="scripts/register_script.js"></script>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+
+        <div class="logo">
+            <div class="logo-relative">
+                <a class="logo-text" href="/">
+                    FLASH<span class="span">BOX</span>
+                </a>
+                <div class="logo-image">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav-mobile">
+            <li><a href="https://localhost:8080/">Home</a></li>
+            <li><a href="https://localhost:8080/registration">Rejestracja</a></li>
+            {% if isLoggedIn %}
+            <li><a href="https://localhost:8080/ships">Moje Paczki</a></li>
+            <li><a href="https://localhost:8080/new_ship">Nowa Paczka</a></li>
+            <li><a href="https://localhost:8080/logout">Wyloguj</a></li>
+            {% else %}
+            <li><a href="https://localhost:8080/login">Login</a></li>
+            {% endif %}
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div class="total_form_container">
+        <div class="form-container">
+            <div class="form-box">
+
+                <div class="form-title">
+                    Zarejestruj sie
+                </div>
+
+                <form id="registration-form" class="registration-form"
+                    action="https://localhost:8080/registration/register" method="POST">
+
+                    <div>
+                        <input id="name" type="text" name="name" placeholder="Imie" />
+                    </div>
+
+                    <div>
+                        <input id="surname" type="text" name="surname" placeholder="Nazwisko" />
+                    </div>
+
+                    <div>
+                        <input id="birth" type="date" name="birth" class="date-picker" placeholder="Data urodzenia" />
+                    </div>
+
+                    <div>
+                        <input id="country" type="text" name="country" placeholder="Kraj" />
+                    </div>
+
+                    <div>
+                        <input id="street" type="text" name="street" placeholder="Ulica" />
+                    </div>
+
+                    <div>
+                        <input id="nr" type="text" name="nr" placeholder="nr" />
+                    </div>
+
+                    <div>
+                        <input id="postal" type="text" name="postal" placeholder="kod pocztowy" />
+                    </div>
+
+                    <div>
+                        <input id="login" type="text" name="login" placeholder="Login" />
+                    </div>
+
+                    <div>
+                        <input id="pesel" type="text" name="pesel" placeholder="PESEL" />
+                    </div>
+
+                    <div class="form-row">
+                        <input id="password" type="password" name="password" placeholder="Hasło" />
+                    </div>
+
+                    <div class="form-row">
+                        <input id="second_password" type="password" name="second_password"
+                            placeholder="Powtórz Hasło" />
+                    </div>
+
+                    <div class="form-row">
+                        <input id="button-reg-form" type="submit" value="Rejestruj"
+                            class="submit-button-not-available" />
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+        
+    </div>
+    <footer>
+        <p class="footer-inline left">&copy; 2020 Mateusz Milewski</p>
+    </footer>
+
+</body>
+
+</html>
