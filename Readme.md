@@ -23,16 +23,11 @@ Id paczkomatu:  paczkomat1
 Id paczkomatu:  paczkomat2
 Id paczkomatu:  paczkomat3
 
-
 Możliwie konta kurierów do wykorzystania mają odpowiednie loginy i hasła:
 
-Login: Admin1
-Hasło: slomianykapelusz25!
-Login: Admin2
-Hasło: NieodpowiedzialneHaslo123
-Login: Admin3
-Hasło: MojPiesJestSuper
-
+Login: Admin1 Hasło: slomianykapelusz25!
+Login: Admin2 Hasło: NieodpowiedzialneHaslo123
+Login: Admin3 Hasło: MojPiesJestSuper
 
 Do uruchomienia aplikacji kuriera proponuję użyć polecenia:
 
