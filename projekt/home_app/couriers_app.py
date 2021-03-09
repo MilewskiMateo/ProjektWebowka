@@ -151,7 +151,6 @@ def pick():
 
 @app.route('/my-ships',methods=[GET])
 def myShips():
-    log.error("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
     if 'Courierlogin' in session:
         login_hash = session['Courierlogin']
 
