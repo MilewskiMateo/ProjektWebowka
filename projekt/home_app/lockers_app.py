@@ -66,8 +66,8 @@ def post():
 
 @app.route('/post-it/send',methods=[POST])
 def sendPost():
-    lockerId = request.form.get('lockerId')
-    shipId = request.form.get('shipId')
+    lockerId = request.form.get('lockerId').strip()
+    shipId = request.form.get('shipId').strip()
     if db.exists(shipId) and db.exists(lockerId):
         ship = json.loads(db.get(shipId))
         if ship[SHIP_STATUS] == STATUS_NEW:
